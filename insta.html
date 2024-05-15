@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>insta page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+    }
+    .container{
+      height: 600px;
+      width: 60%;
+      display: flex;
+      
+    }
+    .img{
+      width: 50%;
+      position: relative;
+    }
+    .jk{
+      position:absolute;
+      top: 22px;
+      left: 158px;
+    }
+    .form{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 50%;
+      align-items: center;
+    }
+    .logo{
+      width: 80%;
+      height: 15%;
+      border: 1px solid silver;
+      display: flex;
+      justify-content: center;
+      border-bottom: none;
+
+    }
+    .logo img{
+      height: 80px;
+      width: 70%;
+    }
+    .field{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 55%;
+      border: 1px solid silver;
+      border-top: none;
+      margin-bottom: 10px;
+
+    }
+    .field input{
+      padding: 10px;
+      width: 80%;
+      border-color: silver;
+    }
+    .field button{
+      padding:10px ;
+      width: 80%;
+      border: hidden;
+      border-radius: 5px;
+      color: white;
+      background-color: #53bdeb;
+    }
+    .line-container {
+      display: flex;
+      align-items: center;
+      width: 80%;
+      margin: 20px 0;
+    }
+    .line {
+      flex-grow: 1;
+      height: 1px;
+      background-color:grey;
+    }
+    .text {
+      margin: 0 10px;
+      white-space: nowrap; 
+    }
+    .png{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      height: 20%;
+      border: 1px solid silver;
+
+    }
+    .new{
+      display: flex;
+      
+    }
+    .new img{
+      height: 50px;
+      width: 150px;
+      margin: 10px;
+    }
+    .the{
+      padding: 10px;
+    }
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="img">
+      <img src="home-phones.png" alt="">
+      <img class="jk" src="screenshot1.png" alt="">
+    </div>
+    <div class="form">
+      <div class="logo">
+        <img src="logo.png" alt="">
+      </div>
+      <div class="field">
+        <input type="text" placeholder="Phone Number, Username or Email"><br>
+        <input type="password" placeholder="Password"><br><br>
+        <button>Log in</button>
+        <div class="line-container">
+          <div class="line"></div>
+          <div class="text">OR</div>
+          <div class="line"></div>
+        </div>
+        <p>Forgot Password ?</p>
+      </div>
+      <div class="png">
+        <div class="the">Get the app.</div>
+        <div class="new">
+          <img src="get app.png" alt="">
+          <img src="get app 1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
